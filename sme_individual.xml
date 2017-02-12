@@ -82,29 +82,29 @@
                         <responsedata></responsedata>
                         <header>
                               <memberref>1-20020000001            </memberref>
-                              <subjectreturncode>1</subjectreturncode>
-                              <!--หมายเลขอ้างอิงการสืบค้น-->
+                              <subjectreturncode>1</subjectreturncode>  <!-- ใช้เช็คว่ามีค่าหรือไม่ check found -->
+                              <!-- หมายเลขอ้างอิงการสืบค้น -->
                               <enqcontrolnum>453043562</enqcontrolnum>
                         </header>
                         <subject>
                               <name>
-                                    <familyname>สมมติ1</familyname>
-                                    <firstname>ตัวอย่าง1</firstname>
-                                    <dateofbirth>20160906</dateofbirth>
-                                    <maritalstatus>0001</maritalstatus>
-                                    <gender>2</gender>
-                                    <nationality>01</nationality>
-                                    <enqconsent>Y</enqconsent>
+                                    <familyname>สมมติ1</familyname>     <!-- read -->
+                                    <firstname>ตัวอย่าง1</firstname>    <!-- read -->
+                                    <dateofbirth>20160906</dateofbirth> <!-- read -->
+                                    <maritalstatus>0001</maritalstatus> <!-- read -->
+                                    <gender>2</gender>      <!-- read -->
+                                    <nationality>01</nationality> <!-- read -->
+                                    <enqconsent>Y</enqconsent>    <!-- read -->
                               </name>
                               <name>
-                                    <familyname>สมมุติ1</familyname>
-                                    <firstname>ตัวอย่าง1</firstname>
-                                    <dateofbirth>20160906</dateofbirth>
-                                    <maritalstatus>0001</maritalstatus>
-                                    <gender>2</gender>
-                                    <title>นาย</title>
-                                    <nationality>01</nationality>
-                                    <enqconsent>Y</enqconsent>
+                                    <familyname>สมมุติ1</familyname>    <!-- read -->
+                                    <firstname>ตัวอย่าง1</firstname>    <!-- read -->
+                                    <dateofbirth>20160906</dateofbirth> <!-- read -->
+                                    <maritalstatus>0001</maritalstatus> <!-- read -->
+                                    <gender>2</gender>      <!-- read -->
+                                    <title>นาย</title>      <!-- read -->
+                                    <nationality>01</nationality> <!-- read -->
+                                    <enqconsent>Y</enqconsent>    <!-- read -->
                               </name>
                               <id>
                                     <idnumber>3200100197003</idnumber>
