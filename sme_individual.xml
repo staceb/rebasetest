@@ -47,18 +47,18 @@
                         <idnumber>3200100197003</idnumber>
                         <idtype>01</idtype>
                   </id>
-                  <user>system</user>
-                  <memberref>1-20020000001</memberref>
+                  <user>system</user>     <!-- read -->
+                  <memberref>1-20020000001</memberref>      <!-- read -->
                   <enquirystatus>EQ</enquirystatus>
-                  <mediacode>BB</mediacode>
-                  <trackingid>151343</trackingid>
-                  <transactiondate>20161229</transactiondate>
-                  <responsedate>20161229 135122</responsedate>
-                  <consent>Y</consent>
-                  <creditscore>Y</creditscore>
-                  <enquirypurpose>01</enquirypurpose>
-                  <enquiryamount>123</enquiryamount>
-                  <enquirydate>20161229 135115</enquirydate>
+                  <mediacode>BB</mediacode>     <!-- read -->
+                  <trackingid>151343</trackingid>     <!-- read -->
+                  <transactiondate>20161229</transactiondate>     <!-- read -->
+                  <responsedate>20161229 135122</responsedate>    <!-- read -->
+                  <consent>Y</consent>    <!-- read -->
+                  <creditscore>Y</creditscore>  <!-- read -->
+                  <enquirypurpose>01</enquirypurpose> <!-- read -->
+                  <enquiryamount>123</enquiryamount>  <!-- read -->
+                  <enquirydate>20161229 135115</enquirydate>      <!-- read -->
                   <tuefenquiry>
                         <header>
                               <memberref>1-20020000001            </memberref>
@@ -82,9 +82,8 @@
                         <responsedata></responsedata>
                         <header>
                               <memberref>1-20020000001            </memberref>
-                              <subjectreturncode>1</subjectreturncode>  <!-- ใช้เช็คว่ามีค่าหรือไม่ check found -->
-                              <!-- หมายเลขอ้างอิงการสืบค้น -->
-                              <enqcontrolnum>453043562</enqcontrolnum>
+                              <subjectreturncode>1</subjectreturncode>  <!-- ใช้เช็คว่ามีค่าหรือไม่ check found (ยังไม่ได้เก็บลงใน database) -->                              
+                              <enqcontrolnum>453043562</enqcontrolnum>  <!-- หมายเลขอ้างอิงการสืบค้น -->
                         </header>
                         <subject>
                               <name>
@@ -107,68 +106,69 @@
                                     <enqconsent>Y</enqconsent>    <!-- read -->
                               </name>
                               <id>
-                                    <idnumber>3200100197003</idnumber>
-                                    <idtype>01</idtype>
+                                    <idnumber>3200100197003</idnumber>  <!-- read -->
+                                    <idtype>01</idtype>     <!-- read -->
                               </id>
                               <address>
-                                    <country>TH</country>
-                                    <district>ซอยอลาสก้า เมืองนิวยอร์ค</district>
-                                    <postalcode>70110</postalcode>
-                                    <reporteddate>20160430</reporteddate>
-                                    <line1>10</line1>
-                                    <line3>ตำบลลอสแอลเจลิส จังหวัดเหมาะตะมะ</line3>
+                                    <country>TH</country>   <!-- read -->
+                                    <district>ซอยอลาสก้า เมืองนิวยอร์ค</district>   <!-- read -->
+                                    <postalcode>70110</postalcode>      <!-- read -->
+                                    <reporteddate>20160430</reporteddate>     <!-- read -->
+                                    <line1>10</line1> <!-- read -->
+                                    <line3>ตำบลลอสแอลเจลิส จังหวัดเหมาะตะมะ</line3> <!-- read -->
                               </address>
                               <account>
-                                    <ownership>1</ownership>
-                                    <accounttype>05</accounttype>
-                                    <currencycode>THB</currencycode>
-                                    <asofdate>20160630</asofdate>
-                                    <creditlimit>50000</creditlimit>
-                                    <amountowed>5500</amountowed>
-                                    <defaultdate>20160225</defaultdate>
-                                    <installmentamount>1200</installmentamount>
-                                    <accountstatus>20</accountstatus>
-                                    <shortname>TCRBANK</shortname>
-                                    <opendate>20150801</opendate>
-                                    <installmentfreq>3</installmentfreq>
-                                    <installmentnumofpayment>24</installmentnumofpayment>
+                                    <ownership>1</ownership>      <!-- read -->
+                                    <accounttype>05</accounttype> <!-- read -->
+                                    <currencycode>THB</currencycode>    <!-- read -->
+                                    <asofdate>20160630</asofdate> <!-- read -->
+                                    <creditlimit>50000</creditlimit>    <!-- read -->
+                                    <amountowed>5500</amountowed> <!-- read -->
+                                    <defaultdate>20160225</defaultdate> <!-- read -->
+                                    <installmentamount>1200</installmentamount>     <!-- read -->
+                                    <accountstatus>20</accountstatus>   <!-- read -->
+                                    <shortname>TCRBANK</shortname>      <!-- read -->
+                                    <opendate>20150801</opendate> <!-- read -->
+                                    <installmentfreq>3</installmentfreq>      <!-- read -->
+                                    <installmentnumofpayment>24</installmentnumofpayment> <!-- read -->
                                     <paymtpattern>003002001000</paymtpattern>
                                     <paymtstartdate>20160630</paymtstartdate>
                                     <paymtenddate>20160330</paymtenddate>
-                                    <paymt01>003</paymt01>
+                                    <paymt01>003</paymt01>  <!-- read -->
                                     <paymtdate01>20160630</paymtdate01>
-                                    <paymt02>002</paymt02>
+                                    <paymt02>002</paymt02>  <!-- read -->
                                     <paymtdate02>20160531</paymtdate02>
                                     <paymt03>001</paymt03>
                                     <paymtdate03>20160430</paymtdate03>
                                     <paymt04>000</paymt04>
                                     <paymtdate04>20160331</paymtdate04>
                                     <history>
-                                          <asofdate>20160331</asofdate>
-                                          <creditlimit>50000</creditlimit>
-                                          <amountowed>3600</amountowed>
-                                          <overduemonth>000</overduemonth>
+                                          <asofdate>20160331</asofdate> <!-- read -->
+                                          <creditlimit>50000</creditlimit>    <!-- read -->
+                                          <amountowed>3600</amountowed> <!-- read -->
+                                          <overduemonth>000</overduemonth>    <!-- read -->
                                     </history>
                                     <history>
-                                          <asofdate>20160430</asofdate>
-                                          <creditlimit>50000</creditlimit>
-                                          <amountowed>3800</amountowed>
+                                          <asofdate>20160430</asofdate> <!-- read -->
+                                          <creditlimit>50000</creditlimit>    <!-- read -->
+                                          <amountowed>3800</amountowed> <!-- read -->
                                           <overduemonth>001</overduemonth>
                                     </history>
                                     <history>
-                                          <asofdate>20160531</asofdate>
-                                          <creditlimit>50000</creditlimit>
-                                          <amountowed>4800</amountowed>
-                                          <overduemonth>002</overduemonth>
+                                          <asofdate>20160531</asofdate> <!-- read -->
+                                          <creditlimit>50000</creditlimit>    <!-- read -->
+                                          <amountowed>4800</amountowed> <!-- read -->
+                                          <overduemonth>002</overduemonth>    <!-- read -->
                                     </history>
                               </account>
+                              <!-- *** enquiry loop check *** -->
                               <enquiry>
-                                    <enqpurpose>01</enqpurpose>
+                                    <enqpurpose>01</enqpurpose>   <!-- read -->
                                     <enqamount>123</enqamount>
-                                    <currencycode>THB</currencycode>
-                                    <shortname>SMEBANK</shortname>
-                                    <enqdate>20161229</enqdate>
-                                    <enqtime>135137</enqtime>
+                                    <currencycode>THB</currencycode>    <!-- read -->
+                                    <shortname>SMEBANK</shortname>      <!-- read -->
+                                    <enqdate>20161229</enqdate>   <!-- read -->
+                                    <enqtime>135137</enqtime>     <!-- read -->
                               </enquiry>
                               <enquiry>
                                     <enqpurpose>01</enqpurpose>
@@ -777,7 +777,7 @@
                               </enquiry>
                               <enquiry>
                                     <enqpurpose>02</enqpurpose>
-                                    <membercode>BK99018803</membercode>
+                                    <membercode>BK99018803</membercode> <!-- read -->
                                     <currencycode>THB</currencycode>
                                     <shortname>BANK</shortname>
                                     <enqdate>20161124</enqdate>
@@ -1986,19 +1986,20 @@
                                     <enqdate>20160510</enqdate>
                                     <enqtime>174411</enqtime>
                               </enquiry>
+                              <!-- *** end enquiry loop check *** -->
                               <creditscore>
-                                    <score>0612</score>
-                                    <odds>05135</odds>
-                                    <scoreversion>01</scoreversion>
-                                    <scoresegment>A</scoresegment>
-                                    <recalibrationversion>02</recalibrationversion>
-                                    <scoreversiondate>21309</scoreversiondate>
-                                    <scoregrade>GG</scoregrade>
-                                    <reasoncode1>014</reasoncode1>
-                                    <reasoncode2>023</reasoncode2>
-                                    <reasoncode3>019</reasoncode3>
-                                    <reasoncode4>021</reasoncode4>
-                                    <reasoncode5>020</reasoncode5>
+                                    <score>0612</score>     <!-- read -->
+                                    <odds>05135</odds>      <!-- read -->
+                                    <scoreversion>01</scoreversion>     <!-- read -->
+                                    <scoresegment>A</scoresegment>      <!-- read -->
+                                    <recalibrationversion>02</recalibrationversion> <!-- read -->
+                                    <scoreversiondate>21309</scoreversiondate>      <!-- read -->
+                                    <scoregrade>GG</scoregrade>   <!-- read -->
+                                    <reasoncode1>014</reasoncode1>      <!-- read -->
+                                    <reasoncode2>023</reasoncode2>      <!-- read -->
+                                    <reasoncode3>019</reasoncode3>      <!-- read -->
+                                    <reasoncode4>021</reasoncode4>      <!-- read -->
+                                    <reasoncode5>020</reasoncode5>      <!-- read -->
                                     <scorename>GE</scorename>
                               </creditscore>
                         </subject>
