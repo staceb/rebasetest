@@ -33,17 +33,17 @@
         <transaction>
             <language>2060002</language>
             <attribute></attribute>
-            <user>system</user>
-            <producttype>2030007</producttype>
-            <confirmconsent>Y</confirmconsent>
-            <memberref>2-20020000002</memberref>
-            <mediacode>BB</mediacode>
-            <trackingid>12468</trackingid>
-            <transactiondate>20161229 154320</transactiondate>
-            <inquirypurpose>1170001</inquirypurpose>
+            <user>system</user> <!-- read -->
+            <producttype>2030007</producttype>  <!-- read -->
+            <confirmconsent>Y</confirmconsent>  <!-- read -->
+            <memberref>2-20020000002</memberref>    <!-- read -->
+            <mediacode>BB</mediacode>   <!-- read -->
+            <trackingid>12468</trackingid>  <!-- read -->
+            <transactiondate>20161229 154320</transactiondate>  <!-- read -->
+            <inquirypurpose>1170001</inquirypurpose>    <!-- read -->
             <inquirystatus>IQ</inquirystatus>
             <requestdate>20161229 154320</requestdate>
-            <responsedate>20161229 154325</responsedate>
+            <responsedate>20161229 154325</responsedate>    <!-- read -->
             <h2hrequest>
                 <language>2060002</language>
                 <registtype>1140001</registtype>
@@ -58,48 +58,48 @@
                 <header>
                     <message></message>
                     <total>1</total>
-                    <result>Success</result>
+                    <result>Success</result>    <!-- ใช้เช็คว่ามีค่าหรือไม่ check found (ยังไม่ได้เก็บลงใน database) -->
                     <memberref>2-20020000002</memberref>
                 </header>
                 <subject>
                     <heading>
                         <inqpurpose>อนุมัติสินเชื่อใหม่</inqpurpose>
                         <producttype>Credit Report and Scoring</producttype>
-                        <subjectreturncode>1</subjectreturncode>
+                        <subjectreturncode>1</subjectreturncode>    <!-- ใช้เช็คว่ามีค่าหรือไม่ check found (ยังไม่ได้เก็บลงใน database) -->
                         <productref>18321</productref>
                         <issueddate>20161229 165550</issueddate>
                     </heading>
                     <profile>
-                        <thainame>ทดสอบ0105529033091</thainame>
+                        <thainame>ทดสอบ0105529033091</thainame> <!-- read -->
                         <engname>NAME0105529033091</engname>
-                        <registtype>บริษัทจำกัด</registtype>
-                        <registid>0105529033091</registid>
-                        <taxid>3101408744</taxid>
-                        <registdate>19860917</registdate>
-                        <address>29 หมู่ที่ 4 ถนนพระราม 2 ตำบลนาดี อำเภอเมืองสมุทรสาคร</address>
+                        <registtype>บริษัทจำกัด</registtype>    <!-- read -->
+                        <registid>0105529033091</registid>  <!-- read -->
+                        <taxid>3101408744</taxid>   <!-- read -->
+                        <registdate>19860917</registdate>   <!-- read -->
+                        <address>29 หมู่ที่ 4 ถนนพระราม 2 ตำบลนาดี อำเภอเมืองสมุทรสาคร</address>    <!-- read -->
                         <additional>
                             <id>
-                                <asofdate>201212</asofdate>
-                                <idtypeandnumber>รหัสประจำตัวผู้เสียภาษี / 1055290330</idtypeandnumber>
-                                <submittedby>สมาชิก # 1</submittedby>
+                                <asofdate>201212</asofdate> <!-- read -->
+                                <idtypeandnumber>รหัสประจำตัวผู้เสียภาษี / 1055290330</idtypeandnumber> <!-- read -->
+                                <submittedby>สมาชิก # 1</submittedby>   <!-- read -->
                             </id>
                             <address>
-                                <address>29 ม.4 ถ.พระราม 2 ต.นาดี </address>
-                                <asofdate>201212</asofdate>
-                                <submittedby>สมาชิก # 1</submittedby>
+                                <address>29 ม.4 ถ.พระราม 2 ต.นาดี </address>    <!-- read -->
+                                <asofdate>201212</asofdate> <!-- read -->
+                                <submittedby>สมาชิก # 1</submittedby>   <!-- read -->
                             </address>
                         </additional>
                     </profile>
                     <creditscore>
-                        <score>696</score>
-                        <odds>9582:418</odds>
-                        <rs1>66</rs1>
-                        <rs2>25</rs2>
-                        <rs3>79</rs3>
-                        <rs4>22</rs4>
-                        <rs5>24</rs5>
+                        <score>696</score>  <!-- read -->
+                        <odds>9582:418</odds>   <!-- read -->
+                        <rs1>66</rs1>   <!-- read -->
+                        <rs2>25</rs2>   <!-- read -->
+                        <rs3>79</rs3>   <!-- read -->
+                        <rs4>22</rs4>   <!-- read -->
+                        <rs5>24</rs5>   <!-- read -->
                         <scoretype>0102THSME0105</scoretype>
-                        <scoregrade>DD</scoregrade>
+                        <scoregrade>DD</scoregrade> <!-- read -->
                     </creditscore>
                     <executivesummary>
                         <totalaccounts>3</totalaccounts>
@@ -140,43 +140,44 @@
                     <activeaccounts>
                         <account>
                             <creditinfo>
-                                <outstanding>0</outstanding>
-                                <creditor>สมาชิก # 1</creditor>
-                                <ownership>กู้เดี่ยว</ownership>
-                                <accountnumber>บัญชี # 1</accountnumber>
-                                <asofdate>201212</asofdate>
-                                <creditlimit>8000000</creditlimit>
-                                <installmentamount>0</installmentamount>
-                                <accountstatus>010</accountstatus>
+                                <outstanding>0</outstanding>    <!-- read -->
+                                <creditor>สมาชิก # 1</creditor> <!-- read -->
+                                <ownership>กู้เดี่ยว</ownership>    <!-- read เก็บแบบ กู้เดียว = 1, else = 4 -->
+                                <accountnumber>บัญชี # 1</accountnumber>    <!-- read -->
+                                <asofdate>201212</asofdate> <!-- read -->
+                                <creditlimit>8000000</creditlimit>  <!-- read -->
+                                <installmentamount>0</installmentamount>    <!-- read -->
+                                <accountstatus>010</accountstatus>  <!-- read -->
                                 <unitmake></unitmake>
                                 <unitmodel></unitmodel>
-                                <lastpaymentdate>20121227</lastpaymentdate>
-                                <credittype>สินเชื่อวงเงินเบิกเกินบัญชี</credittype>
-                                <pastdueamount>0</pastdueamount>
-                                <creditortype>สหกรณ์</creditortype>
-                                <openeddate>20030516</openeddate>
+                                <lastpaymentdate>20121227</lastpaymentdate> <!-- read -->
+                                <credittype>สินเชื่อวงเงินเบิกเกินบัญชี</credittype>    <!-- read -->
+                                <pastdueamount>0</pastdueamount>    <!-- read -->
+                                <creditortype>สหกรณ์</creditortype> <!-- read -->
+                                <openeddate>20030516</openeddate>   <!-- read -->
                                 <delinquentstatus>N</delinquentstatus>
                                 <daypastdue>000</daypastdue>
                                 <writeoffamount>0</writeoffamount>
                                 <sharedcreditflag></sharedcreditflag>
-                                <numofinstallments>0</numofinstallments>
+                                <numofinstallments>0</numofinstallments>    <!-- read -->
                                 <paymentterm>0</paymentterm>
                                 <minimumpayment></minimumpayment>
                                 <creditcardtype></creditcardtype>
                             </creditinfo>
                             <paymentpattern>
-                                <pattern>  N  N  N  N  N  N  N  N  N  N  N  NXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</pattern>
-                                <startmonth>201212</startmonth>
-                                <endmonth>201101</endmonth>
+                                <pattern>  N  N  N  N  N  N  N  N  N  N  N  NXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</pattern> <!-- read -->
+                                <startmonth>201212</startmonth> <!-- read -->
+                                <endmonth>201101</endmonth> <!-- read -->
                                 <over30days>0</over30days>
                                 <over60days>0</over60days>
                                 <over90days>0</over90days>
                             </paymentpattern>
                             <credithistories>
+                            <!-- *** credithist loop check *** -->
                                 <credithist>
-                                    <outstanding>0</outstanding>
-                                    <asofdate>201212</asofdate>
-                                    <daypastdue>  N</daypastdue>
+                                    <outstanding>0</outstanding>    <!-- read -->
+                                    <asofdate>201212</asofdate> <!-- read -->
+                                    <daypastdue>  N</daypastdue>    <!-- read -->
                                 </credithist>
                                 <credithist>
                                     <outstanding>4836386</outstanding>
@@ -233,6 +234,7 @@
                                     <asofdate>201201</asofdate>
                                     <daypastdue>  N</daypastdue>
                                 </credithist>
+                                <!-- *** end credithist loop check *** -->
                             </credithistories>
                         </account>
                         <account>
@@ -268,12 +270,13 @@
                                 <over30days>0</over30days>
                                 <over60days>0</over60days>
                                 <over90days>0</over90days>
-                            </paymentpattern>
+                            </paymentpattern>                            
                             <credithistories>
+                            <!-- *** credithist loop check *** -->
                                 <credithist>
-                                    <outstanding>6530976</outstanding>
-                                    <asofdate>201212</asofdate>
-                                    <daypastdue>  N</daypastdue>
+                                    <outstanding>6530976</outstanding>  <!-- read -->
+                                    <asofdate>201212</asofdate> <!-- read -->
+                                    <daypastdue>  N</daypastdue>    <!-- read -->
                                 </credithist>
                                 <credithist>
                                     <outstanding>16190660</outstanding>
@@ -330,6 +333,7 @@
                                     <asofdate>201201</asofdate>
                                     <daypastdue>  N</daypastdue>
                                 </credithist>
+                                <!-- *** end credithist loop check *** -->
                             </credithistories>
                         </account>
                         <account>
@@ -368,10 +372,11 @@
                                 <over90days>0</over90days>
                             </paymentpattern>
                             <credithistories>
+                            <!-- *** credithist loop check *** -->
                                 <credithist>
-                                    <outstanding>15012122</outstanding>
-                                    <asofdate>201212</asofdate>
-                                    <daypastdue>000</daypastdue>
+                                    <outstanding>15012122</outstanding> <!-- read -->
+                                    <asofdate>201212</asofdate> <!-- read -->
+                                    <daypastdue>000</daypastdue>    <!-- read -->
                                 </credithist>
                                 <credithist>
                                     <outstanding>15003030</outstanding>
@@ -428,15 +433,17 @@
                                     <asofdate>201201</asofdate>
                                     <daypastdue>000</daypastdue>
                                 </credithist>
+                                <!-- *** end credithist loop check *** -->
                             </credithistories>
                         </account>
                     </activeaccounts>
                     <inquiryhistories>
+                    <!-- inqhist loop check -->
                         <inqhist>
-                            <inqpurpose>อนุมัติสินเชื่อใหม่</inqpurpose>
+                            <inqpurpose>อนุมัติสินเชื่อใหม่</inqpurpose>    <!-- อนุมัติสินเชื่อใหม่ = 01, ทบทวนสินเชื่อ = 02  -->
                             <creditor>สมาชิก # 2</creditor>
-                            <creditortype>ธนาคาร</creditortype>
-                            <inqdate>20161229 161621</inqdate>
+                            <creditortype>ธนาคาร</creditortype> <!-- read -->
+                            <inqdate>20161229 161621</inqdate>  <!-- read -->
                         </inqhist>
                         <inqhist>
                             <inqpurpose>อนุมัติสินเชื่อใหม่</inqpurpose>
